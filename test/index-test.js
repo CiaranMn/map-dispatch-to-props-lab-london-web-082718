@@ -58,6 +58,7 @@ describe('restaurants input', () => {
     let restaurantNameInput = wrapper.find('input').first();
     restaurantNameInput.simulate('change', { target: { value: 'chilis' } });
     let locationInput = wrapper.find({type: 'text'}).last();
+    console.log(locationInput)
     locationInput.simulate('change', { target: { value: 'philly' } });
     let form = wrapper.find('form').first();
     form.simulate('submit',  { preventDefault() {} });
